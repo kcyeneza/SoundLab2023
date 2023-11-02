@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DecentSampler minVersion="1.0.0">
+   <ui width="812" height="375" bgImage="glitter.jpeg" layoutMode="relative" bgMode="top_left">
+    <tab name="main">
+
+
+    <label text="CONVOLUTION" x="680" y="10" width="120" height="30" textColor="FFFFFFFF"></label>
+    <menu x="683" y="40"  width="120" height="30" requireSelection="true" placeholderText="Choose..." value="1">
+  
+  <option name="STAIRWELL">
+    <binding type="effect" level="instrument" position="3" parameter="FX_IR_FILE" translation="fixed_value" translationValue="stairwell.wav" />
+  </option>
+  <option name="NORLIN HALLWAY">
+   <binding type="effect" level="instrument" position="3" parameter="FX_IR_FILE" translation="fixed_value" translationValue="Norlin_hallway.wav" />
+  </option>
+  <option name="ELEVATOR">
+    <binding type="effect" level="instrument" position="3" parameter="FX_IR_FILE" translation="fixed_value" translationValue="elevator.wav" />
+  </option>
+  <option name="LIVING ROOM">
+    <binding type="effect" level="instrument" position="3" parameter="FX_IR_FILE" translation="fixed_value" translationValue="livingroom.wav" />
+  </option>
+  <option name="BATHROOM">
+    <binding type="effect" level="instrument" position="3" parameter="FX_IR_FILE" translation="fixed_value" translationValue="bathroom.wav" />
+  </option>
+</menu>
+
+      <labeled-knob 
+       x="30" y="75" width="50" height="120" textSize="16" textColor="FFFFFFFF" trackForegroundColor="CC000000" trackBackgroundColor="#CBAD66" label="ATTACK" type="float" minValue="0.0" maxValue="4.0" value="0.009999999776482582" style="custom_skin_vertical_drag" customSkinImage="slider_knobman2.png" customSkinNumFrames="53" customSkinImageOrientation="vertical" mouseDragSensitivity="60">
+        <binding type="amp" level="instrument" position="0" parameter="ENV_ATTACK" />
+      </labeled-knob>
+      <labeled-knob x="180" y="75" width="50" height="120" textSize="16" textColor="FFFFFFFF" trackForegroundColor="CC000000" trackBackgroundColor="66999999" label="RELEASE" type="float" minValue="0.0" maxValue="20.0" value="1.0" style="custom_skin_vertical_drag" customSkinImage="slider_knobman2.png" customSkinNumFrames="53" customSkinImageOrientation="vertical" mouseDragSensitivity="60">
+        <binding type="amp" level="instrument" position="0" parameter="ENV_RELEASE"/>
+      </labeled-knob>
+
+      <labeled-knob x="330" y="75" width="50" height="120" textSize="16" textColor="FFFFFFFF" trackForegroundColor="CC000000" trackBackgroundColor="66999999" label="CHORUS" type="float" minValue="0.0" maxValue="1" value="0" style="custom_skin_vertical_drag" customSkinImage="slider_knobman2.png" customSkinNumFrames="53" customSkinImageOrientation="vertical" mouseDragSensitivity="60">
+        <binding type="effect" level="instrument" position="1" parameter="FX_MIX"/>
+      </labeled-knob>
+
+      <labeled-knob x="480" y="75" width="50" height="120" textSize="16" textColor="FFFFFFFF" trackForegroundColor="CC000000" trackBackgroundColor="66999999" label="TONE" type="float" minValue="0" maxValue="1" value="1.0" style="custom_skin_vertical_drag" customSkinImage="slider_knobman2.png" customSkinNumFrames="53" customSkinImageOrientation="vertical" mouseDragSensitivity="60">
+        <binding type="effect" level="instrument" position="0" parameter="FX_FILTER_FREQUENCY" translation="table" translationTable="0,33;0.3,150;0.4,450;0.5,1100;0.7,4100;0.9,11000;1.0001,22000"/>
+      </labeled-knob>
+
+      <labeled-knob x="630" y="75" width="50" height="120" textSize="16" textColor="FFFFFFFF" trackForegroundColor="CC000000" trackBackgroundColor="66999999" label="REVERB" type="percent" minValue="0" maxValue="100" value="50.0" style="custom_skin_vertical_drag" customSkinImage="slider_knobman2.png" customSkinNumFrames="53" customSkinImageOrientation="vertical" mouseDragSensitivity="60">
+        <binding type="effect" level="instrument" position="2" parameter="FX_REVERB_WET_LEVEL" translation="linear" translationOutputMin="0" translationOutputMax="1"/>
+      </labeled-knob>
+    
+    </tab>
+    <keyboard/>
+  </ui>
+  <groups attack="0.009999999776482582" decay="25" sustain="1.0" release="1.0" volume="-3dB">
+    <group>
+    <sample loNote="36" hiNote="47" rootNote="39" path="Eb_M1soft.wav" length="807552" loVel="1" hiVel="119"/>
+     <sample loNote="36" hiNote="47" rootNote="39" path="Eb_M1.wav" length="807552" loVel="120" hiVel="127"/>
+      <sample loNote="48" hiNote="59" rootNote="46" path="Bb_M1_soft.wav" length="805888" loVel="1" hiVel="119"/>
+     <sample loNote="48" hiNote="59" rootNote="46" path="Bb_M1.wav" length="805888" loVel="120" hiVel="127"/>
+      <sample loNote="60" hiNote="71" rootNote="53" path="F_M1soft.wav" length="595328" loVel="1" hiVel="119"/>
+     <sample loNote="60" hiNote="71" rootNote="53" path="F_M1.wav" length="595328" loVel="120" hiVel="127"/>
+     <sample loNote="72" hiNote="83" rootNote="60" path="C_M1soft.wav" length="759168" loVel="1" hiVel="119"/>
+     <sample loNote="72" hiNote="83" rootNote="60" path="C_M1.wav" length="759168" loVel="120" hiVel="127"/>
+     <sample loNote="84" hiNote="95" rootNote="67" path="G_M1soft.wav" length="457600" loVel="1" hiVel="119"/>
+     <sample loNote="84" hiNote="95" rootNote="67" path="G_M1.wav" length="457600" loVel="120" hiVel="127"/>
+     <sample loNote="96" hiNote="107" rootNote="74" path="D_M1soft.wav" length="756480" loVel="1" hiVel="119"/>
+     <sample loNote="96" hiNote="107" rootNote="74" path="D_M1.wav" length="756480" loVel="120" hiVel="127"/>
+     <sample loNote="108" hiNote="119" rootNote="81" path="A_M1_soft.wav" length="469888" loVel="1" hiVel="119"/>
+     <sample loNote="108" hiNote="119" rootNote="81" path="A_M1.wav" length="469888" loVel="120" hiVel="127"/>
+     <sample loNote="120" hiNote="123" rootNote="88" path="E_M1soft.wav" length="758656" loVel="1" hiVel="119"/>
+     <sample loNote="120" hiNote="123" rootNote="88" path="E_M1.wav" length="758656" loVel="120" hiVel="127"/>
+     <sample loNote="124" hiNote="127" rootNote="95" path="B_M1soft.wav" length="75264" loVel="1" hiVel="119"/>
+     <sample loNote="124" hiNote="127" rootNote="95" path="B_M1.wav" length="75264" loVel="120" hiVel="127"/>
+     <effects/>
+    </group>
+  </groups>
+
+  <effects>
+    <effect type="lowpass" frequency="21989.00916994164"/>
+    <effect type="chorus" mix="0.0" modDepth="0.2" modRate="0.2"/>
+    <effect type="reverb" wetLevel="0.5"/>
+
+    <effect type="convolution" mix="0.5" irFile="stairwell.wav" />
+  </effects>
+  <midi>
+    <cc number="1">
+      <binding level="ui" type="control" parameter="VALUE" position="3" translation="linear" translationOutputMin="0" translationOutputMax="1"/>
+    </cc>
+  </midi>
+  <modulators/>
+  <tags/>
+</DecentSampler>
