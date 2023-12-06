@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecentSampler minVersion="1.0.0">
+ <ui width="814" height="510" bgImage="background.png" layoutMode="relative" layoutmode="">    <tab name="main">
+      <labeled-knob x="10" y="116" width="80" height="80" textSize="14" textColor="FFFFFFFF" 
+                    trackForegroundColor="CCf6a748" trackBackgroundColor="FFFFFFFF" 
+                    label="" type="float" minValue="0.0" maxValue="4.0" value="0"
+                    style="custom_skin_vertical_drag" customSkinImage = "knob.png" 
+                    customSkinNumFrames="76" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+        <binding type="amp" level="instrument" position="0" parameter="ENV_ATTACK" />
+      </labeled-knob>
+
+
+      <labeled-knob x="80" y="116" width="80" height="80" textSize="14" textColor="FFFFFFFF" 
+                    trackForegroundColor="CCf6a748" trackBackgroundColor="FFFFFFFF" 
+                    label="" type="float" minValue="0.0" maxValue="20.0" value="20" 
+                    style="custom_skin_vertical_drag" customSkinImage = "knob.png" 
+                    customSkinNumFrames="76" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+        <binding type="amp" level="instrument" position="0" parameter="ENV_RELEASE" />
+      </labeled-knob>
+
+
+      <labeled-knob x="80" y="183" width="80" height="80" textSize="14" textColor="FFFFFFFF" 
+                    trackForegroundColor="CCf6a748" trackBackgroundColor="FFFFFFFF" 
+                    label="" type="float" minValue="0.0" maxValue="1000" value="0" 
+                    style="custom_skin_vertical_drag" customSkinImage = "knob.png" 
+                    customSkinNumFrames="76" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+        <binding type="effect" level="instrument" position="1" parameter="FX_MIX" />
+      </labeled-knob>
+
+
+       <labeled-knob x="10" y="183" label="" width = "80" height="80" textSize="14" textColor="FFFFFFFF" 
+                    trackForegroundColor="CCf6a748" trackBackgroundColor="FFFFFFFF" type="float" minValue="0" maxValue=".2" 
+                    textColor="FF000000" value="0"
+                    style="custom_skin_vertical_drag" customSkinImage = "knob.png" 
+                    customSkinNumFrames="76" customSkinImageOrientation="vertical" mouseDragSensitivity="100">
+                <binding type="effect" level="instrument" position="3" parameter="FX_MIX"/>
+      </labeled-knob>
+
+
+            <menu x="0" y="0"  width="71" height="30" requireSelection="true" placeholderText="Reverb" value="1">
+                <option name="Verbo">
+                    <binding type="effect" level="instrument" position="3" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/wilson-dancing-september.wav" />
+                </option>
+                <option name="Pete">
+                    <binding type="effect" level="instrument" position="3" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/darg-barking.wav" />
+                </option>
+                <option name="Show">
+                    <binding type="effect" level="instrument" position="3" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/show-how-about.wav" />
+                </option>
+                <option name="Flower">
+                    <binding type="effect" level="instrument" position="3" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/talking-to-plants.wav" />
+                </option>
+                <option name="Worldly">
+                    <binding type="effect" level="instrument" position="3" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/uncle-flubsy.wav" />
+                </option>
+                <option name="Purples">
+                    <binding type="effect" level="instrument" position="3" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/burp.wav" />
+                    </option>
+                <option name="Mass">
+                    <binding type="effect" level="instrument" position="3" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/bigburp.mp3" />
+                    </option>
+                <option name="Water">
+                    <binding type="effect" level="instrument" position="3" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/drinky.mp3" />
+                    </option>
+                <option name="Nichts">
+                    <binding type="effect" level="instrument" position="3" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/no.mp3" />
+                    </option>
+                <option name="Insect">
+                    <binding type="effect" level="instrument" position="3" parameter="FX_IR_FILE" translation="fixed_value" translationValue="IR/bug.mp3" />
+                    </option>
+                
+                
+              </menu>
+    </tab>
+         <keyboard>
+            <color loNote="39" hiNote="108" color="f0220c"/>
+        </keyboard>
+  </ui>
+  <groups attack="0.000" decay="25" sustain="1.0" release="0.430" volume="-5dB" globalTuning="0">
+    <group>
+    <sample loNote="81" hiNote="87" rootNote="57" path="NyckelharpaSamples/NEW_A.WAV"
+    length="457600"/>
+    <sample loNote="46" hiNote="53" rootNote="58" path="NyckelharpaSamples/NEW_B-Flat.WAV"
+    length="807552"/>
+    <sample loNote="95" hiNote="108" rootNote="59" path="NyckelharpaSamples/NEW_B.WAV"
+    length="75264"/>
+    <sample loNote="60" hiNote="66" rootNote="60" path="NyckelharpaSamples/NEW_C.WAV"
+    length="756480"/>
+    <sample loNote="74" hiNote="80" rootNote="74" path="NyckelharpaSamples/NEW_D.WAV"
+    length="595328"/>
+    <sample loNote="39" hiNote="45" rootNote="75" path="NyckelharpaSamples/NEW_E-Flat.wav"
+    length="805888"/>
+    <sample loNote="88" hiNote="94" rootNote="76" path="NyckelharpaSamples/NEW_E.WAV"
+    length="469888"/>
+    <sample loNote="53" hiNote="59" rootNote="77" path="NyckelharpaSamples/NEW_F.WAV"
+    length="759168"/>
+    <sample loNote="67" hiNote="73" rootNote="78" path="NyckelharpaSamples/NEW_G.WAV"
+    length="758656"/>
+    </group>
+  </groups>
+  <effects>
+    <effect type="lowpass" frequency="22000.0"/>
+    <effect type="chorus"  mix="0.0" modDepth="0.2" modRate="0.2" />
+    <effect type="reverb" wetLevel="0.5"/>
+    <effect type="convolution" mix="0.5" irFile="IR/elevator.wav"/>
+  </effects>
+
+  <modulators>
+    <lfo shape="sine" frequency="2" modAmount="1.0">
+        <binding type="effect" level="instrument" position="0" parameter="FX_FILTER_FREQUENCY" translation="linear" translationOutputMin="0" translationOutputMax="2000.0" modBehavior="add" />
+    </lfo>
+</modulators>
+
+  <midi>
+    <!-- This causes MIDI CC 1 to control the 4th knob (cutoff) -->
+    <cc number="1">
+      <binding level="ui" type="control" parameter="VALUE" position="3" 
+               translation="linear" translationOutputMin="0" 
+               translationOutputMax="1" />
+    </cc>
+  </midi>
+</DecentSampler>
